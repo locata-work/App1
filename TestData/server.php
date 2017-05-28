@@ -12,9 +12,9 @@ if (isset($_GET["getUser"])) {
     //truy vấn lấy toàn bộ thông tin trong bảng users
     $sql = "select * from users";
     $query = mysqli_query($conn, $sql);
-    while ($user = mysqli_fetch_assoc($query)){
-    $users[] = array('user' => $user);
-    }
+//    while ($user = mysqli_fetch_assoc($query)){
+//    $users[] = array('user' => $user);
+//    }
 
     echo "Search OK";
 
