@@ -16,8 +16,6 @@ if (isset($_GET["getUser"])) {
     $users[] = array('user' => $user);
     }
 
-    echo "Search OK";
-
     // trả ra dữ liệu dưới dạng json
     if ($format == 'json') {
         header('Content-type: application/json');
