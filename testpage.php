@@ -1,6 +1,6 @@
 <?php
 	if (isset($_GET["a"])) {
-		if($_GET['a']) == '1')
+		if(($_GET['a']) == '1')
 		{
 		  echo <h1>This is A</h1>
 		}
