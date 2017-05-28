@@ -2,13 +2,13 @@
 
 if (isset($_GET["getUser"])) {
     // kiểm tra định dạng dữ liểu trả ra là json hay xml
-    $format = strtolower($_GET['format']) == 'json' ? 'json' : 'xml';
+    //$format = strtolower($_GET['format']) == 'json' ? 'json' : 'xml';
 
     //tạo mạng users để lưu thông tin toàn bộ user trong db
     $users = array();
 
     //gọi file kết nối db
-    require_once("connection.php");
+    require_once("Connection.php");
     //truy vấn lấy toàn bộ thông tin trong bảng users
     $sql = "select * from users";
     $query = mysqli_query($conn, $sql);
