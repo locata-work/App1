@@ -17,5 +17,8 @@
 //               )
 //	);
 
-    $conn = pg_connect("host=ec2-54-243-253-17.compute-1.amazonaws.com dbname=d58vrl17ts5u5q user=zwtnvsurqaeert password=217caf7cd5e18385e7f726dfd589110414148d0400c429fc43123926465f23d6") or die("không thể kết nối tới database");
+    //$conn = pg_connect("host=ec2-54-243-253-17.compute-1.amazonaws.com dbname=d58vrl17ts5u5q user=zwtnvsurqaeert password=217caf7cd5e18385e7f726dfd589110414148d0400c429fc43123926465f23d6") or die("không thể kết nối tới database");
+
+    $myPDO = new PDO('pgsql:host=ec2-54-243-253-17.compute-1.amazonaws.com;dbname=d58vrl17ts5u5q', 'zwtnvsurqaeert', '217caf7cd5e18385e7f726dfd589110414148d0400c429fc43123926465f23d6');
+
 ?>
