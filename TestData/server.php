@@ -16,7 +16,7 @@ if (isset($_GET["getUser"])) {
 //    $users[] = array('user' => $user);
 //    }
 
-    echo "Search OK";
+    echo $query;
 
 //    // trả ra dữ liệu dưới dạng json
 //    if ($format == 'json') {
